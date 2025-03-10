@@ -1,38 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
-    background: rgb(17, 175, 223);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
+  font-family: Arial, sans-serif;
+  background: rgb(17, 175, 223);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
 
-  .container {
-    background: white;
-    display: flex;
-    flex-direction: row;
-    max-width: 700px;
-    height: auto;
-    width: 100%;
-    padding: 50px;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center; 
-  }
+header {
+  background: #128C7E;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
 
-  .Container-Flex{ 
-    flex: 50%;
-  }
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+main.container {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
 
-  img {
-    border-radius: 10px;
-    width: 100%;
-  }
+.flex-item {
+  flex: 1 1 45%; /* Permite que los elementos crezcan y se encojan, ocupando aproximadamente la mitad del ancho  algo nuevo aprendido*/
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
 
-  
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer {
+  background: #128C7E;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .flex-item {
+      flex: 1 1 100%; /* Los elementos ocupan todo el ancho en pantallas más pequeñas */
+  }
+}
