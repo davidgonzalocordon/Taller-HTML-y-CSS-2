@@ -26,6 +26,12 @@ main.container {
   text-align: center;
 }
 
+.menu-container {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+}
+
 .flex-item {
   flex: 1 1 45%; /* Permite que los elementos crezcan y se encojan, ocupando aproximadamente la mitad del ancho  algo nuevo aprendido*/
   margin: 10px;
